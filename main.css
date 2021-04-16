@@ -86,7 +86,7 @@ body > main {
 .content {
 	background-color: var(--back-color);
 	display: grid;
-	grid-row-gaps: 2rem;
+	grid-row-gap: 2rem;
 	margin-bottom: 2rem;
 	padding: 2rem;
 }
