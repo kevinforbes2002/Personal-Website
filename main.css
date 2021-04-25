@@ -362,6 +362,10 @@ projects > #patient-survey {
 
 @media screen and (max-width: 800px) {
 
+    #menu {
+        display: inline-block;
+    }
+
     .expanded-bar-link {
         display: none;
     }
@@ -388,5 +392,69 @@ projects > #patient-survey {
     #about > div {
         grid-column: 1;
         grid-row: 3;
+    }
+
+    #projects {
+        grid-row-gap: 2rem;
+    }
+
+    #projects > #tetrow {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    #tetrow > img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #tetrow > #tetrow-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #projects > #adventure-rpg {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    #adventure-rpg > #adventure-rpg-images {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #adventure-rpg > #adventure-rpg-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #projects > #dotfiles {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    #dotfiles > img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #dotfiles > #dotfiles-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #contact > .contact-link {
+        text-align: center;
+    }
+
+    #contact > .contact-link > img {
+        display: block;
+        margin: auto;
+    }
+
+    #contact > .contact-link > a {
+        display: inline-block;
+        margin-top: .5rem;
+        position: static;
     }
 }
