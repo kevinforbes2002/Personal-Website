@@ -5,6 +5,7 @@
 	--shadow-color: #778899;
 	--text-color-dark: #000000;
 	--text-color-light: #F0FFFF;
+	--white-color: #FFFFFF;
 }
 
 * {
@@ -137,7 +138,7 @@ body > main {
 	border-radius: 1rem;
 	color: var(--text-color-light);
 	display: inline-block;
-	padding .25rem;
+	padding: .25rem;
 }
 
 #about img {
@@ -147,6 +148,209 @@ body > main {
 	grid-column: 2;
 	grid-row: 2;
 	margin: auto;
+}
+
+#projects {
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto;
+}
+
+#projects > h1, #about > .anchor {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#projects > .project {
+	display: grid;
+	grid-column-gap: 3rem;
+	grid-row-gap: 2rem;
+}
+
+#projects > .project-image {
+	border: solid .1rem var(--text-color-dark);
+	border-radius: .5rem;
+	box-shadow: .4rem .4rem .5rem var(--shadow-color);
+	margin: auto;
+}
+
+#projects h2 {
+	background-color: var(--accent-color);
+	border-radius: 3rem;
+	color: var(--text-color-light);
+	padding: .5rem;
+	text-align: center;
+}
+
+#projects ul {
+	padding-left: 1.25rem;
+}
+
+#projects > #personal-website {
+	grid-column: 1;
+	grid-row: 2;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+}
+
+#personal-website > img {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#personal-website > website-text {
+	grid-column:2;
+	grid-row: 1;
+	margin: auto;
+	position: relative;
+}
+
+projects > #patient-survey {
+	grid-column: 1;
+	grid-row: 3;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+}
+
+#patient-survey > survey-text {
+	grid-column: 1;
+	grid-row: 1;
+	margin: auto;
+	position: relative;
+}
+
+#patient-survey > img {
+	grid-column: 2;
+	grid-row: 1;
+	margin: auto;
+}
+
+#classwork {
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto;
+}
+
+#classwork h1, #classwork .anchor {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#classwork #timeline {
+	background-color: var(--accent-color);
+	border-radius: 1rem;
+	grid-column: 1;
+	grid-row: 2/5;
+	height: 100%;
+	margin-left: 4rem;
+	width: 2rem;
+}
+
+#classwork .class {
+	display: grid;
+	grid-column: 1;
+	grid-template-columns : 10rem auto;
+	grid-template-rows: auto;
+	grid-column-gap: 1rem;
+}
+
+.class > .class-picture:hover {
+	box-shadow: 0rem .2rem 1rem .2rem var(--shadow-color);
+	position: relative;
+	top: -.1rem;
+}
+
+#classwork > #class0 {
+	grid-row: 2;
+}
+
+#classwork > #class1 {
+	grid-row: 3;
+}
+
+#classwork > #class2 {
+	grid-row: 4;
+}
+
+.class > .class-picture {
+	align-items: center;
+	background-color: var(--white-color);
+	border: solid .1rem var(--accent-color);
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	grid-column: 1;
+	grid-row: 1;
+	height: 8rem;
+	justify-content: center;
+	margin: auto;
+	width: 8rem;
+}
+
+.class > .class-info {
+	border: solid .1rem var(--accent-color);
+	border-radius: 1rem;
+	grid-column: 2;
+	grid-row: 1;
+	padding: 1rem;
+}
+
+.class-info > ul {
+	padding-left: 1.25rem;
+}
+
+#contact {
+	grid-column-gap: 1rem;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto;
+}
+
+#contact > h1, #contact .anchor {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#contact > .contact-link {
+	margin: auto;
+	max-width: 25rem;
+	width: 100%;
+}
+
+#contact img {
+	background-color: var(--accent-color);
+	border-radius: 1rem;
+	cursor: pointer;
+	height: 3rem;
+	padding: .5rem;
+	vertical-align: middle;
+	width: 3rem;
+}
+
+#contact img:hover {
+	box-shadow: 0rem .2rem 1rem .2rem var(--shadow-colr);
+	position: relative;
+	top: -.1rem;
+}
+
+#contact > .contact-link > a {
+	color: var(--text-color-dark);
+	left: 1rem;
+	position: relative;
+	text-decoration: underline;
+	top: .1rem;
+}
+
+#contact > #email {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#contact> #linkedin {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+#contact > #github {
+	grid-column: 1;
+	grid-row: 4;
 }
 
 @media screen and (max-width: 1280px) {
