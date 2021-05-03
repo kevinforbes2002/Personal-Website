@@ -78,6 +78,87 @@ a:link, a:visited {
     color: var(--text-color-light);
 }
 
+#menu {
+    align-items: center;
+    display: none;
+    margin: 0rem .5rem;
+    position: relative;
+    width: 3rem;
+}
+
+#menu-button {
+    cursor: pointer;
+    display: block;
+    height: 1.5rem;
+    margin: auto;
+    position: relative;
+    width: 2rem;
+}
+
+.bar {
+    background-color: var(--accent-color);
+    border: solid .05rem var(--accent-color);
+    display: block;
+    height: .3rem;
+    transition: .2s;
+    width: 2rem;
+}
+
+#bar2 {
+    margin: .3rem 0rem;
+}
+
+/* Rotate first bar */
+.change #bar1 {
+    -moz-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -ms-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -o-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    -webkit-transform: rotate(-45deg) translate(-.4rem, .45rem);
+    transform: rotate(-45deg) translate(-.4rem, .45rem);
+    transition: .2s;
+}
+
+/* Fade second bar */
+.change #bar2 {
+    opacity: 0;
+    transition: .2s;
+}
+
+/* Rotate third bar */
+.change #bar3 {
+    -moz-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -ms-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -o-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    -webkit-transform: rotate(45deg) translate(-.4rem, -.45rem);
+    transform: rotate(45deg) translate(-.4rem, -.45rem);
+    transition: .2s;
+}
+
+#menu-links {
+    background-color: var(--header-color);
+    box-shadow: -.4rem .6rem .8rem -.2rem var(--shadow-color);
+    display: none;
+    position: fixed;
+    right: -.5rem;
+    top: var(--header-height);
+    min-width: 10rem;
+}
+
+#menu-links.show {
+    display: block;
+}
+
+#menu-links > a {
+    color: var(--accent-color);
+    display: block;
+    padding: .8rem;
+}
+
+#menu-links > a:hover, #menu-links >a:active  {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
 body > main {
 	background-color: var(--back-color);
 	margin: 3rem auto 0rem auto;
