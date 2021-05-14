@@ -236,7 +236,7 @@ body > main {
 	grid-template-rows: auto auto auto auto auto;
 }
 
-#projects > h1, #about > .anchor {
+#projects > h1, #projects > .anchor {
 	grid-column: 1;
 	grid-row: 1;
 }
